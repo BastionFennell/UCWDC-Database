@@ -1,0 +1,4 @@
+<h2>Songs</h2>
+{{#each song in model}}
+  <h2>{{#link-to "song" song}}{{song.name}}{{/link-to}}</h2>
+{{/each}}
