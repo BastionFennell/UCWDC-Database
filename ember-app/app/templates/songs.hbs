@@ -1,4 +1,35 @@
 <h2>Songs</h2>
-{{#each song in model}}
-  <h2>{{#link-to "song" song}}{{song.name}}{{/link-to}}</h2>
-{{/each}}
+<div class="row">
+  <div class="col-md-2" style="text-align: center">
+    <div class="row">
+      Filter by Dance:
+      {{view "select" content=danceTypes value=danceFilter}}
+    </div>
+    <div class="row">
+      Filter by BPM:
+      {{input value=bpmStart placeholder="90" action="filter" size=4}}
+      -
+      {{input value=bpmEnd placeholder="120" action="filter" size=4}}
+    </div>
+    <div class="row">
+      <button {{action "filter"}}> Filter </button>
+      <button {{action "clear"}}> Clear </button>
+    </div>
+  </div>
+
+  <div class="col-md-10">
+    <div class="row">
+      <h5>{{filteredSongs.length}} songs found</h5>
+    </div>
+    {{#each song in filteredSongs}}
+      <div class="song-list row">
+        <div class="col-md-2"><h2>{{#link-to "song" song}}{{song.name}}{{/link-to}}</h2></div>
+        <div class="col-md-2"><h4>{{song.artist}}</h4></div>
+        <div class="col-md-2"><h4>{{song.dance}}</h4></div>
+        <div class="col-md-2"><h4>{{song.length}} minutes</h4></div>
+        <div class="col-md-2"><h4>{{song.bpm}} bpm</h4></div>
+      </div>
+    {{/each}}
+  
+  </div>
+</div>

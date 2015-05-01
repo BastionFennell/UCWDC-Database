@@ -2,5 +2,8 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr("string"),
-  length: DS.attr()
+  artist: DS.attr("string"),
+  length: DS.attr(),
+  bpm: DS.attr(),
+  dance: DS.attr("string")
 });
