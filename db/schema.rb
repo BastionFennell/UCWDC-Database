@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150504035101) do
+ActiveRecord::Schema.define(:version => 20150504035129) do
 
 # Could not dump table "songs" because of following StandardError
 #   Unknown type 'array' for column 'cpl_phrasing'
