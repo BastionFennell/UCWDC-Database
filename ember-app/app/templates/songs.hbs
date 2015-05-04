@@ -21,14 +21,15 @@
       <h5>{{filteredSongs.length}} {{songOrSongs}} found</h5>
     </div>
     {{#each song in filteredSongs}}
-      <div class="song row">
-        <div class="col-md-2"><h2>{{#link-to "song" song}}{{song.name}}{{/link-to}}</h2></div>
-        <div class="col-md-2"><h4>{{song.artist}}</h4></div>
-        <div class="col-md-2"><h4>{{song.dance}}</h4></div>
-        <div class="col-md-2"><h4>{{song.length}} minutes</h4></div>
-        <div class="col-md-2"><h4>{{song.bpm}} bpm</h4></div>
-      </div>
+      {{#link-to "song" song}}
+        <div class="song row">
+          <div class="col-md-2"><h2>{{song.name}}</h2></div>
+          <div class="col-md-2"><h4>{{song.artist}}</h4></div>
+          <div class="col-md-2"><h4>{{song.dance}}</h4></div>
+          <div class="col-md-2"><h4>{{song.length}} minutes</h4></div>
+          <div class="col-md-2"><h4>{{song.bpm}} bpm</h4></div>
+        </div>
+      {{/link-to}}
     {{/each}}
-  
   </div>
 </div>
