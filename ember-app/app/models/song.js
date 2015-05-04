@@ -7,6 +7,6 @@ export default DS.Model.extend({
   dance: DS.attr("string"),
   cpl_length: DS.attr(),
   proam_length: DS.attr(),
-  cpl_phrasing: DS.attr("array"),
-  proam_phrasing: DS.attr("array")
+  cpl_phrasing: DS.attr(),
+  proam_phrasing: DS.attr()
 });
