@@ -11,17 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150504034205) do
+ActiveRecord::Schema.define(:version => 20150504034802) do
 
   create_table "songs", :force => true do |t|
     t.string   "name"
-    t.float    "length"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.integer  "bpm"
     t.string   "dance"
     t.string   "artist"
     t.float    "cpl_length"
+    t.float    "proam_length"
   end
 
 end
