@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150501035134) do
+ActiveRecord::Schema.define(:version => 20150504034205) do
 
   create_table "songs", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20150501035134) do
     t.integer  "bpm"
     t.string   "dance"
     t.string   "artist"
+    t.float    "cpl_length"
   end
 
 end

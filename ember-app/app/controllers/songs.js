@@ -7,6 +7,14 @@ export default Ember.ArrayController.extend({
   bpmEnd: null,
   danceFilter: null,
 
+  songOrSongs: function(){
+    if(this.get("filteredSongs").length == 1){
+      return "song";
+    } else {
+      return "songs";
+    }
+  }.property("filteredSongs"),
+
   filteredSongs: function(){
     var filters = this.get("filters");
     if(!filters){

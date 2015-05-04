@@ -1,6 +1,5 @@
-<h2>Songs</h2>
-<div class="row">
-  <div class="col-md-2" style="text-align: center">
+<div class="row songs">
+  <div class="col-md-2 filters">
     <div class="row">
       Filter by Dance:
       {{view "select" content=danceTypes value=danceFilter}}
@@ -17,12 +16,12 @@
     </div>
   </div>
 
-  <div class="col-md-10">
+  <div class="col-md-10 song-list">
     <div class="row">
-      <h5>{{filteredSongs.length}} songs found</h5>
+      <h5>{{filteredSongs.length}} {{songOrSongs}} found</h5>
     </div>
     {{#each song in filteredSongs}}
-      <div class="song-list row">
+      <div class="song row">
         <div class="col-md-2"><h2>{{#link-to "song" song}}{{song.name}}{{/link-to}}</h2></div>
         <div class="col-md-2"><h4>{{song.artist}}</h4></div>
         <div class="col-md-2"><h4>{{song.dance}}</h4></div>
