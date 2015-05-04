@@ -12,4 +12,4 @@ Song.create!(name: "polka1", artist: "slightly less local band", length: 5.7, bp
 Song.create!(name: "nightclub2", artist: "Tracy Atkins", length: 2.7, bpm: 95, dance: "nc")
 
 
-#Song: {name, artist, bpm, dance, cpl_length, proam_length, cpl_phrasing, proam_length
+#Song: {name, artist, bpm, dance, cpl_length, proam_length, cpl_phrasing, proam_length}

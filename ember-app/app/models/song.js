@@ -5,5 +5,6 @@ export default DS.Model.extend({
   artist: DS.attr("string"),
   length: DS.attr(),
   bpm: DS.attr(),
-  dance: DS.attr("string")
+  dance: DS.attr("string"),
+  cpl_length: DS.attr()
 });
