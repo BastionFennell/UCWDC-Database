@@ -1,34 +1,54 @@
-<div class="row">
-  <div class="col-md-12">
-    <h2>{{model.name}}</h2>
+<div class="single-song">
+  <div class="row name">
+    <div class="col-md-12">
+      <h2>{{model.name}} by {{model.artist}}</h2>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-3">
-    <h5>Artist: {{model.artist}}</h5>
+  <div class="left-side">
+    <img src="http://www.placekitten.com/g/500/500">
   </div>
-  <div class="col-md-3">
-    <h5>Style: {{model.dance}}</h5>
-  </div>
-  <div class="col-md-3">
-    <h5>BPM: {{model.bpm}}</h5>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-3">
-    <h5>Couples Length: {{model.cpl_length}}</h5>
-  </div>
-  <div class="col-md-3">
-    <h5>Proam Length: {{model.proam_length}}</h5>
-  </div>
-  <div class="col-md-3">
-    <h5>Couplse Phrasing: {{model.cpl_phrasing}}</h5>
-  </div>
-  <div class="col-md-3">
-    <h5>Proam Phrasing: {{model.proam_phrasing}}</h5>
-  </div>
-</div>
 
-<div class="row">
-  {{#link-to "songs"}} &lt; Back to songs list {{/link-to}}
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-3">
+      <h5><strong>Style:</strong> {{model.dance}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-3">
+      <h5><strong>BPM:</strong> {{model.bpm}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-3">
+      <h5><strong>Couples Length:</strong> {{model.cpl_length}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-3">
+      <h5><strong>Proam Length:</strong> {{model.proam_length}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-3">
+      <h5><strong>Couples Phrasing:</strong> {{model.cpl_phrasing}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-3">
+      <h5><strong>Proam Phrasing:</strong> {{model.proam_phrasing}}</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-3">
+      {{#link-to "songs"}} &lt; Back to songs list {{/link-to}}
+    </div>
+  </div>
 </div>

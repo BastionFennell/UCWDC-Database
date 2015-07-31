@@ -16,6 +16,10 @@ body {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 
+  z-index: 10;
+
+  position: relative;
+
   h2 {
     text-decoration: underline;
   }
@@ -63,4 +67,27 @@ body {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   border-right: 1px solid gray;
+}
+
+
+.single-song {
+  z-index: 0;
+  position: relative;
+  .name {
+    text-align: center;
+    background: #C3C2E4;
+    margin-top: -20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .left-side {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    padding-bottom: 15px;
+  }
 }
